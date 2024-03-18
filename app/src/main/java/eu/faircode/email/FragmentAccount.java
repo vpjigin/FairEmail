@@ -55,6 +55,7 @@ import android.widget.RadioGroup;
 import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
@@ -207,6 +208,8 @@ public class FragmentAccount extends FragmentBase {
 
         view = (ViewGroup) inflater.inflate(R.layout.fragment_account, container, false);
         scroll = view.findViewById(R.id.scroll);
+
+        Toast.makeText(getActivity(),"Test push",Toast.LENGTH_LONG).show();
 
         // Get controls
         spProvider = view.findViewById(R.id.spProvider);
